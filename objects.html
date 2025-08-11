@@ -19,8 +19,45 @@
         console.log(car)
         console.log(car.make)
         console.log(car["Year"])
-        
     </script>
+
+    <!-- OBJECT TASK -->
+    <script>
+        let my_object = [23, "Jane", 560, ["Lesson", "Maths", { "currency": "KES" }], 987, 76, "John"]
+    </script>
+
+    <script>
+        // 1. Display KES
+        console.log(my_object[3][2].currency);
+
+        // 2. Display 560
+        console.log(my_object[2]);
+
+        // 3. Display Maths
+        console.log(my_object[3][1]);
+
+        // 4. Add another key “amount” with value 90
+        my_object[3][2].amount = 90;
+        console.log(my_object[3][2]);
+
+        // 5. Reverse 987 to 789 without using an inbuilt method or assigning 789 manually
+        let num = my_object[4];
+        let reversed = 0;
+        while (num > 0) {
+            reversed = reversed * 10 + (num % 10);
+            num = Math.floor(num / 10);
+        }
+        my_object[4] = reversed;
+        console.log(my_object[4]);
+
+        // 6. Change the name “John” to “Jane”
+        let idx = my_object.indexOf("John");
+        if (idx !== -1) {
+            my_object[idx] = "Jane";
+        }
+        console.log(my_object);
+    </script>
+
 </body>
 
 </html>
