@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Object</title>
 </head>
 
 <body>
@@ -13,12 +13,26 @@
         let car = {
             "make": "Volvo",
             "Year": 2015,
-            "Con": "Sweden",
+            "Com": "Sweden",
             "New": false
         }
+
         console.log(car)
         console.log(car.make)
+        //Volvo
         console.log(car["Year"])
+
+        let keys = Object.keys(car)
+        console.log(keys)
+
+        let values = Object.values(car)
+        console.log(values)
+        //     ['Volvo', 2015, 'Sweden', false]
+
+        let entries = Object.entries(car)
+        console.log(entries)
+        console.log(Object.keys(car))
+
     </script>
 
     <!-- OBJECT TASK -->
@@ -37,7 +51,7 @@
         console.log(my_object[3][1]);
 
         // 4. Add another key “amount” with value 90
-        my_object[3][2].amount = 90;
+        my_object[3][2]["amount"] = 90;
         console.log(my_object[3][2]);
 
         // 5. Reverse 987 to 789 without using an inbuilt method or assigning 789 manually
@@ -56,6 +70,36 @@
             my_object[idx] = "Jane";
         }
         console.log(my_object);
+
+
+        let my_array = [23, 'Jane', 560, ['Lesson', 'Maths', { 'currency': 'KES' }], 987, 76, 'John']
+
+        // let obj = my_array[3][2]
+        // obj.amount = 90
+        // console.log(my_array[3][2])
+
+        let number = my_array[4].toString()
+        let split_value = number.split('')
+        console.log(split_value)
+        //  ['9', '8', '7']
+
+        let reverse = split_value.reverse()
+        console.log(reverse)
+        // ['7', '8', '9']
+        let joined = reverse.join('')
+        console.log(joined)
+
+
+        let new_value = parseInt(joined)
+
+        my_array[4] = new_value
+        console.log(my_array)
+        //  [23, 'Jane', 560, Array(3), 789, 76, 'John']
+
+        my_array[6] = "Jane"
+        console.log(my_array)
+        // [23, 'Jane', 560, Array(3), 789, 76, 'Jane']
+
     </script>
 
 </body>

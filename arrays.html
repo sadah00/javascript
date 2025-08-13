@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Array</title>
 </head>
 
 <body>
@@ -67,9 +67,25 @@
         console.log(arr5)
         // [65, 'three']
 
+        // SPLICE!!!!
+        // adding elements
+        let ray = [100, 200, false, "Jane", "John"]
+        ray.splice(2, 1, 300, 400)
+        console.log(ray)
+
+        // removing items
+        ray.splice(0, 2)
+        console.log(ray)
+        // [300, 400, 'Jane', 'John']
+
+        // replacing items
+        ray.splice(2, 2, true, "Ryan")
+        console.log(ray)
+        // [300, 400, true, 'Ryan']
+
     </Script>
 
-<!-- ARRAYS TASK -->
+    <!-- ARRAYS TASK -->
     <!-- Assignment 1: Create an Array
     Create an array named colors with the following elements: 'red', 'green', 'blue' -->
 
@@ -128,7 +144,7 @@ Then, remove the first element from combinedArray using the .shift() method. Fin
     Given an array “sourceArray”, extract a subarray “extractedArray” from index 2 to index 4 using the .slice() method.
     Then, modify the extractedArray by replacing its elements with 'x', 'y', and 'z' using the .splice() method.
     Finally, display both the sourceArray and the modified extractedArray. -->
-    
+
     <script>
         let sourceArray = [10, 20, 30, 40, 50, 60];
         let extractedArray = sourceArray.slice(2, 5);
