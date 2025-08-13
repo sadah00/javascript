@@ -8,8 +8,11 @@
 </head>
 
 <body>
+    <div>
+        JS OBJECTS & ARRAYS
+    </div>
     <script>
-        
+
         let company = {
             name: "TechCorp",
             founded: 2010,
@@ -54,15 +57,26 @@
             ]
         };
 
-        // <!-- 1. Display the following
-        // > Instagram
-        // > PostgreSQL
-        // > E-commerce Website
-        // >Tech Plaza
-        // > 4 in team
+        // 1. Display the following
 
-        // 2.Change the value of:
-        // Google Analytics to AWS -->
+        // > Instagram          
+        console.log(company.departments[1].employees[1].skills[1]);
+
+        // > PostgreSQL
+        console.log(company.departments[0].employees[1].skills[2]);
+
+        // > E-commerce Website
+        console.log(company.projects[0].title);
+
+        // > Tech Plaza
+        console.log(company.location.address.building);
+
+        // > 4 in team
+        console.log(company.projects[1].team[1]);
+
+        // 2. Change the value of:
+        // Google Analytics to AWS
+        console.log(company.departments[1].employees[0].skills[1] = "AWS");
     </script>
 </body>
 
