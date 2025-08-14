@@ -148,9 +148,13 @@ Then, remove the first element from combinedArray using the .shift() method. Fin
     <script>
         let sourceArray = [10, 20, 30, 40, 50, 60];
         let extractedArray = sourceArray.slice(2, 5);
-        extractedArray.splice(0, extractedArray.length, 'x', 'y', 'z');
-        console.log(sourceArray);
+        console.log(extractedArray);
         // [10, 20, 30, 40, 50, 60]
+
+
+        extractedArray.splice(0,3, 'x', 'y', 'z');
+        console.log(sourceArray);
+        
         console.log(extractedArray);
         // ['x', 'y', 'z']
     </script>
