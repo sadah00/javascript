@@ -35,7 +35,9 @@
 
     </script>
 
-    <!-- OBJECT TASK -->
+
+
+    <!-- OBJECTS TASK -->
     <script>
         let my_object = [23, "Jane", 560, ["Lesson", "Maths", { "currency": "KES" }], 987, 76, "John"]
     </script>
@@ -55,14 +57,28 @@
         console.log(my_object[3][2]);
 
         // 5. Reverse 987 to 789 without using an inbuilt method or assigning 789 manually
-        let num = my_object[4];
-        let reversed = 0;
-        while (num > 0) {
-            reversed = reversed * 10 + (num % 10);
-            num = Math.floor(num / 10);
-        }
-        my_object[4] = reversed;
-        console.log(my_object[4]);
+        // let num = my_object[4];
+        // let reversed = 0;
+        // while (num > 0) {
+        //     reversed = reversed * 10 + (num % 10);
+        //     num = Math.floor(num / 10);
+        // }
+        // my_object[4] = reversed;
+        // console.log(my_object[4]);
+
+        console.log(my_object[4])
+        con = my_object[4].toString()
+        console.log(con)
+        split = con.split('')
+        console.log(split)
+        reversed = split.reverse()
+
+        console.log(reversed)
+        combined = reversed.join('')
+        console.log(combined)
+        console.log(parseInt(combined))
+
+
 
         // 6. Change the name “John” to “Jane”
         let idx = my_object.indexOf("John");

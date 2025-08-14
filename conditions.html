@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>CONDITIONS</h1>
+    <Script>
+        //Create a variable and console log whether a number is odd or even
+        let num = 3
+        if (num % 2 == 0) {
+            console.log('num is even')
+        }
+        else { console.log('num is odd') }
+
+        // Create 3 variables and console log the largest of them. Assume that the user would not enter any two numbers which are the same.
+
+        let x = 29
+        let y = 35
+        let z = 47
+        if (z < x > y) {
+            console.log('x is the largest number')
+        }
+
+        else if (z < y > x) {
+            console.log('y is the largest number')
+        }
+
+        else {
+            console.log('z is the largest number')
+        }
+
+
+        // Create a variable called year and enter the a random year. Check if the year is a leap year or not. A leap year is a year that is divisible by 4  not divisible by 100 or divisible  by 400.
+        let year = 2024
+        if (year % 4 == 0 & year % 100 != 0) {
+            console.log('year is leap')
+        }
+        else {
+            console.log('year is not leap')
+        }
+
+        // 3.Write a JavaScript program that computes the average marks of students based on the scale below
+        //70-100 -> A 
+        //60-69 -> B
+        //50-59 -> C
+        //40 - 49 -> D
+        //< 40 -> E
+
+        let marks = 35
+        if (marks >= 70) {
+            console.log('A')
+        }
+
+        else if (marks >= 60 & marks < 70) {
+            console.log('B')
+        }
+
+        else if (marks >= 50 & marks < 60) {
+            console.log('C')
+        }
+
+        else if (marks >= 40 & marks < 50) {
+            console.log('D')
+        }
+        else {
+            console.log('E')
+        }
+
+
+
+
+
+    </Script>
+
+</body>
+
+</html>
