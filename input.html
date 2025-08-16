@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input</title>
+    
 </head>
+
 <body>
     <script>
 
-        let num= parseInt(prompt("Enter number: "))
-        let nam= parseInt(prompt("Enter number: "))
-        
-        console.log(num + nam)
-        
+        // let num = parseInt(prompt("Enter number: "))
+        // let nam = parseInt(prompt("Enter number: "))
 
+        // console.log(num + nam)
 
+        // Use a while and for loop to write a program that checks for a user's password
+        // and lets them input  password 4 times .Upon failure display "User is blocked"
+        let password = "Techcamp"
+        let attempts = 0;
+    
 
+        while (attempts < 4) {
+           let userInput = prompt("Enter password: ");
+            if (userInput === password) {
+                console.log("Access granted");
+                break;
+            } else {
+                attempts++
+                console.log("Incorrect password");
+            }
+        }
+        if (attempts === 4) {
+            console.log("User is blocked");
+        }
 
     </script>
 </body>
+
 </html>
