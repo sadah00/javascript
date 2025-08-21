@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+
+<body>
+    Spread Operator
+    <script>
+        // Combining arrays
+        let arr1 = [1, 2, 3]
+        let arr2 = [4, 5, 6]
+        let arr3 = [...arr1, ...arr2]
+        console.log(arr3)
+        // [1, 2, 3, 4, 5, 6]
+
+        let arr4 = [7, 8, 9]
+        let arr5 = [...arr3, ...arr4]
+        console.log(arr5)
+        // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+        let name="Jane Doe"
+        let spread=[...name]
+        console.log(spread)
+        // ['J', 'a', 'n', 'e', ' ', 'D', 'o', 'e']
+
+    </script>
+</body>
+
+</html>
